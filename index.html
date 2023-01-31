@@ -18,12 +18,12 @@
         <form action="index.html" method="get">
             <fieldset>
                 <legend>Vous</legend>
-                    <label for="nom">Nom* :</label> <input type="text" name="nom" id="nom">
-                    <label for="prenom">Prénom* :</label> <input type="text" name="prenom" id="prenom">
+                    <label for="nom">Nom* :</label> <input type="text" name="nom" id="nom" required>
+                    <label for="prenom">Prénom* :</label> <input type="text" name="prenom" id="prenom" required>
                     <br>
-                    <label for="age">Age* :</label> <input type="tel" name="age" id="age" pattern="[0-9]+" title="Nombre entier">
+                    <label for="age">Age* :</label> <input type="tel" name="age" id="age" pattern="[0-9]+" title="Nombre entier" required>
                     <label for="naissance">Date de naissance* :</label>
-                    <input type="date" name="naissance" id="naissance" value="2023-02-01" min="1924-02-01" max="2005-02-01">
+                    <input type="date" name="naissance" id="naissance" value="2023-02-01" min="1924-02-01" max="2005-02-01" required>
                     <br>
                     <p id="champs_sexe">Sexe* :</p>
                     <input type="radio" name="sexe" id="homme"> <label for="homme">Homme</label>
@@ -44,17 +44,14 @@
             <br>
             <fieldset>
                 <legend>Informations personnelles</legend>
-                <p>
-                    <label for="ville">Ville* :</label> <input type="text" name="ville" id="ville">
-                    <label for="code_postal">Code postal* :</label> <input type="tel" name="code_postal"
-                        id="code_postal">
-                    <label for="adresse">Adresse postale* :</label> <input type="text" name="adresse" id="adresse">
+                    <label for="ville">Ville* :</label> <input type="text" name="ville" id="ville" required>
+                    <label for="code_postal">Code postal* :</label> <input type="tel" name="code_postal" id="code_postal" pattern="([A-Z]+[A-Z]?\-)?[0-9]{1,2} ?[0-9]{3}" title="Code postal au format 31 100 ou 31100" required>
+                    <label for="adresse">Adresse postale* :</label> <input type="text" name="adresse" id="adresse" required>
                     <br>
-                    <label for="email">Adresse mail* :</label> <input type="email" name="email" id="email">
-                    <label for="numero">Téléphone* :</label> <input type="tel" name="numero" id="numero">
+                    <label for="email">Adresse mail* :</label> <input type="email" name="email" id="email" pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})" title="Adresse e-mail au format contact@montrezvous.net" required>
+                    <label for="numero">Téléphone* :</label> <input type="tel" name="numero" id="numero" pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}" title="Téléphone au format 06.00.00.00.00 ou 0600000000" required>
                     <br>
-                    <label for="secu">Numéro de sécurité social* :</label> <input type="tel" name="secu" id="secu">
-                </p>
+                    <label for="secu">Numéro de sécurité social* :</label> <input type="tel" name="secu" id="secu" pattern="[12][ \.\-]?[0-9]{2}[ \.\-]?(0[1-9]|[1][0-2])[ \.\-]?([0-9]{2}|2A|2B)[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{2}" title="Sécurité sociale au format 1 85 11 18 148 410 26" required>
             </fieldset>
             <br>
             <fieldset>
@@ -91,14 +88,12 @@
         <br>
             <fieldset>
                 <legend>Passeport</legend>
-                <label for="passeport">Numéro de passeport :</label> <input type="tel" name="passeport" id="passeport">
+                <label for="passeport">Numéro de passeport :</label> <input type="tel" name="passeport" id="passeport" required>
                 <br>
                 <label for="delivrance_passeport">Date de délivrance du passeport :</label>
-                <input type="date" name="delivrance_passeport" id="delivrance_passeport" value="2023-02-01"
-                    min="1924-02-01" max="2023-02-01">
+                <input type="date" name="delivrance_passeport" id="delivrance_passeport" value="2023-02-01" min="1924-02-01" max="2023-02-01" required>
                 <label for="validite_passeport">Date de validité de passport</label>
-                <input type="date" name="validite_passeport" id="validite_passeport" value="2023-02-01" min="2023-02-01"
-                    max="2033-02-01">
+                <input type="date" name="validite_passeport" id="validite_passeport" value="2023-02-01" min="2023-02-01" max="2033-02-01" required>
             </fieldset>
             <br>
             <button type="submit">Envoyer</button>
