@@ -35,5 +35,24 @@ label {
 }
 
 
+fieldset {
+    border-width: 5px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: larger;
+    border: black solid 3px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 2px 4px 2px 4px;
+}
+
+p#champs_sexe {
+    font-weight: bold;
+    font-size: large;
+}
+
+
 
 
