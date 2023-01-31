@@ -1,0 +1,39 @@
+body{
+    background-color: #ffd970;
+}
+
+button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    margin: 8px;
+    border: darkgrey solid 1px;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 7px;
+    width: 10%;
+}
+
+button:hover {
+    box-shadow: none;
+    background-color: whitesmoke;
+    color: black;
+}
+
+input, select {
+    margin: 5px 10px 5px 5px;
+    border: rgba(236, 23, 23, 0.782) solid 4px;
+    border-radius: 5px;
+}
+
+#italique {
+    font-style: italic;
+}
+
+label {
+    font-weight: bold;
+    font-size:large;
+}
+
+
+
+

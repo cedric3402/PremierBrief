@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <section>
         <h2>Veuillez remplir le formulaire ci dessous :</h2>
-        <em>Les champs avec * sont obligatoires.</em>
+        <p id="italique">Les champs avec * sont obligatoires.</p>
         <br>
         <br>
         <form action="index.html" method="get">
+
             <label for="nom">Nom :</label> <input type="text" name="nom" id="nom">
             <label for="prenom">Prénom :</label> <input type="text" name="prenom" id="prenom">
             <br>
             <label for="age">Age :</label> <input type="tel" name="age" id="age">
-            <p>Sexe :
+            <p>
+                <label for="sexe">Sexe :</label>
                 <input type="checkbox" name="homme" id="homme"> <label for="homme">Homme</label>
                 <input type="checkbox" name="femme" id="femme"> <label for="femme">Femme</label>
                 <input type="checkbox" name="non_precise" id="non_precise"> <label for="non_precise">Non précisé</label>
@@ -27,7 +30,7 @@
             <br>
             <p>
                 <label for="email">Adresse mail :</label> <input type="email" name="email" id="email">
-                <label for="numero">Téléphone</label> <input type="tel" name="numero" id="numero">
+                <label for="numero">Téléphone :</label> <input type="tel" name="numero" id="numero">
             </p>
             <br>
             <label for="ville">Ville :</label> <input type="text" name="ville" id="ville">
@@ -35,7 +38,7 @@
             <label for="adresse">Adresse postale :</label> <input type="text" name="adresse" id="adresse">
             <br>
             <p>
-                <label for="metier">Métier exercé</label>
+                <label for="metier">Métier exercé :</label>
                 <br>
                 <select name="metier" id="metier">
                     <option value="default">--choisir--</option>
@@ -46,13 +49,13 @@
                 </select>
             </p>
             <br>
-            <label for="secu">Numéro de sécurité social</label> <input type="number" name="secu" id="secu">
+            <label for="secu">Numéro de sécurité social :</label> <input type="tel" name="secu" id="secu">
             <br>
-            <label for="naissance">Date de naissance</label>
+            <label for="naissance">Date de naissance :</label>
             <input type="date" name="naissance" id="naissance" value="2023-02-01" min="1924-02-01" max="2005-02-01">
             <br>
             <p>
-                <label for="pays">Pays de naissance</label>
+                <label for="pays">Pays de naissance :</label>
                 <br>
                 <select name="pays" id="pays">
                     <option value="default">--choisir--</option>
@@ -66,7 +69,7 @@
                 </select>
             </p>
             <p>
-                <label for="nationalite">Nationalité</label>
+                <label for="nationalite">Nationalité :</label>
                 <br>
                 <select name="nationalite" id="nationalite">
                     <option value="default">--choisir--</option>
@@ -79,9 +82,9 @@
                     <option value="suisse">Suisse</option>
                 </select>
             </p>
-            <label for="passeport">Numéro de passeport</label> <input type="tel" name="passeport" id="passeport">
+            <label for="passeport">Numéro de passeport :</label> <input type="tel" name="passeport" id="passeport">
             <br>
-            <label for="delivrance_passeport">Date de délivrance du passeport</label>
+            <label for="delivrance_passeport">Date de délivrance du passeport :</label>
             <input type="date" name="delivrance_passeport" id="delivrance_passeport" value="2023-02-01" min="1924-02-01" max="2023-02-01">
             <label for="validite_passeport">Date de validité de passport</label>
             <input type="date" name="validite_passeport" id="validite_passeport" value="2023-02-01" min="2023-02-01" max="2033-02-01">
