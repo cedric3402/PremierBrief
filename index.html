@@ -88,12 +88,12 @@
         <br>
             <fieldset>
                 <legend>Passeport</legend>
-                <label for="passeport">Numéro de passeport :</label> <input type="tel" name="passeport" id="passeport" required>
+                <label for="passeport">Numéro de passeport :</label> <input type="tel" name="passeport" id="passeport" pattern="[0-9]{2}[A-Z]{2}[0-9]{5}" title="Numéro de passeport au format 99ZZ99999">
                 <br>
                 <label for="delivrance_passeport">Date de délivrance du passeport :</label>
-                <input type="date" name="delivrance_passeport" id="delivrance_passeport" value="2023-02-01" min="1924-02-01" max="2023-02-01" required>
+                <input type="date" name="delivrance_passeport" id="delivrance_passeport" value="2023-02-01" min="1924-02-01" max="2023-02-01">
                 <label for="validite_passeport">Date de validité de passport</label>
-                <input type="date" name="validite_passeport" id="validite_passeport" value="2023-02-01" min="2023-02-01" max="2033-02-01" required>
+                <input type="date" name="validite_passeport" id="validite_passeport" value="2023-02-01" min="2023-02-01" max="2033-02-01">
             </fieldset>
             <br>
             <button type="submit">Envoyer</button>
